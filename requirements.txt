@@ -7,3 +7,5 @@ gTTS
 pygame
 pandas
 streamlit-option-menu
+joblib
+scikit-learn
