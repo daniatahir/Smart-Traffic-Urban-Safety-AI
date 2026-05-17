@@ -1,9 +1,0 @@
-streamlit
-ultralytics
-opencv-python-headless
-folium
-streamlit-folium
-gTTS
-pygame
-pandas
-streamlit-option-menu
