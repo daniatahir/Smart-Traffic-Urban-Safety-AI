@@ -1,0 +1,148 @@
+/* style.css */
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;800&display=swap');
+
+/* style.css */
+
+/* 1. Remove the empty space at the very top of the app */
+header[data-testid="stHeader"] {
+    display: none;
+}
+
+/* 2. Tighten the main container margins */
+.stAppViewBlockContainer {
+    padding-top: 1rem !important; /* Adjust this to 0rem if you want even higher */
+    padding-bottom: 0rem !important;
+}
+
+/* 3. Remove default gap for your specific heading */
+.main-heading {
+    margin-top: -80px !important; /* Pulls the heading itself upwards */
+    margin-bottom: 10px !important;
+    font-weight: 800;
+}
+/* Main App Background */
+.stApp {
+    background: linear-gradient(135deg, #f0f9ff 0%, #e0f2fe 100%);
+    font-family: 'Inter', sans-serif;
+    color: #1e293b;
+}
+
+/* Modern White Sidebar */
+[data-testid="stSidebar"] {
+    background-color: #ffffff !important;
+    border-right: 1px solid #e2e8f0;
+    box-shadow: 5px 0 15px rgba(0,0,0,0.02);
+}
+
+/* Metric Card Design */
+.metric-card {
+    background: #ffffff;
+    border-radius: 20px;
+    padding: 25px;
+    text-align: center;
+    box-shadow: 0 10px 25px -5px rgba(0, 0, 0, 0.05);
+    border: 1px solid #ffffff;
+    margin-bottom: 10px;
+}
+
+.metric-card h3 {
+    font-size: 0.85rem;
+    color: #64748b;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    margin-bottom: 10px;
+}
+
+.metric-card h2 {
+    font-size: 2rem;
+    color: #0ea5e9;
+    font-weight: 800;
+}
+
+/* Lighter Search Bar */
+div[data-baseweb="input"] {
+    background-color: #ffffff !important;
+    border-radius: 12px !important;
+    border: 1px solid #bae6fd !important;
+}
+
+/* 1. Force Drag & Drop to Light White */
+
+
+/* This targets the inner box of the uploader specifically */
+[data-testid="stFileUploaderDropzone"] {
+    background-color: #ffffff !important;
+    border: 2px dashed #bae6fd !important;
+    border-radius: 20px !important;
+}
+
+/* 2. Force Search Bar (Text Input) to Light White */
+div[data-baseweb="base-input"] {
+    background-color: #ffffff !important;
+    border-radius: 12px !important;
+}
+
+div[data-baseweb="input"] {
+    background-color: #ffffff !important;
+    border: 1px solid #bae6fd !important;
+}
+
+/* 3. This removes the dark tint Streamlit adds to inputs */
+input {
+    background-color: #ffffff !important;
+    color: #1e293b !important;
+}
+
+/* Results Display Cards */
+.result-card {
+    background: #ffffff;
+    padding: 20px;
+    border-radius: 15px;
+    border-left: 5px solid #0ea5e9;
+    margin-top: 10px;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.02);
+}
+
+/* Custom Button */
+.stButton>button {
+    width: 100%;
+    border-radius: 12px;
+    background-color: #0ea5e9;
+    color: white;
+    font-weight: 600;
+    border: none;
+    padding: 0.6rem;
+}
+/* style.css additions */
+
+/* Hero Section Container */
+.hero-section {
+    background: linear-gradient(100deg, #0ea5e9 0%, #3b82f6 100%);
+    padding: 60px;
+    border-radius: 24px;
+    color: white;
+    margin-bottom: 30px;
+    box-shadow: 0 20px 25px -5px rgba(14, 165, 233, 0.15);
+}
+
+.hero-section h1 {
+    color: white !important;
+    font-size: 3rem !important;
+    margin-bottom: 10px;
+}
+
+.hero-section p {
+    font-size: 1.2rem;
+    opacity: 0.9;
+}
+
+/* Metric Card Adjustments */
+.metric-card h3 {
+    font-weight: 600;
+    font-size: 0.8rem;
+    color: #94a3b8;
+}
+
+.metric-card h2 {
+    color: #1e293b; /* Darker text for readability in light mode */
+}
